@@ -1,0 +1,15 @@
+If we want to deploy laravel brezze and jetstream css / tailwind css with proper style
+
+then we have to remove :
+
+        @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+add:
+
+
+  <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+<script src="{{ asset('js/app.js') }}" defer></script>
+         <script src="https://cdn.tailwindcss.com"></script>
+
+
+ <script src="https://cdn.tailwindcss.com"></script>
